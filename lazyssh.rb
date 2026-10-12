@@ -5,20 +5,20 @@
 class Lazyssh < Formula
   desc "A simple terminal UI for managing SSH connections.  "
   homepage "https://github.com/lord-helicon/lazyssh"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lord-helicon/lazyssh/releases/download/v0.4.0/lazyssh_Darwin_x86_64.tar.gz"
-      sha256 "711bd1b2d32acdf995559493713d2523569ad6888a7de826da1b5fc4798de092"
+      url "https://github.com/lord-helicon/lazyssh/releases/download/v0.5.0/lazyssh_Darwin_x86_64.tar.gz"
+      sha256 "018973c38934ce55eaf0cff66c8c59762facadbc03b7f3252219d1352168b866"
 
       def install
         bin.install "lazyssh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lord-helicon/lazyssh/releases/download/v0.4.0/lazyssh_Darwin_arm64.tar.gz"
-      sha256 "382db559df8bf38c9b6f1f8c4e6620f1f48fd4819d95b92d4fea5bb8c8133bad"
+      url "https://github.com/lord-helicon/lazyssh/releases/download/v0.5.0/lazyssh_Darwin_arm64.tar.gz"
+      sha256 "c3149e59d8c7ab33e1ee747f45b5057d79402eb467137243c441314226111d34"
 
       def install
         bin.install "lazyssh"
@@ -28,22 +28,22 @@ class Lazyssh < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lord-helicon/lazyssh/releases/download/v0.4.0/lazyssh_Linux_x86_64.tar.gz"
-      sha256 "1bf6ed964012743cd2d2831d886e24834106a7c816c0c5bd9d492fc9adb46c9b"
+      url "https://github.com/lord-helicon/lazyssh/releases/download/v0.5.0/lazyssh_Linux_x86_64.tar.gz"
+      sha256 "81a73944ba9a0e36006e6a8aa38cf7bc7b20c27d4fb79aa61ea7cd0b53d97bed"
       def install
         bin.install "lazyssh"
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/lord-helicon/lazyssh/releases/download/v0.4.0/lazyssh_Linux_armv6.tar.gz"
-      sha256 "9bc6ed3db06fd2ade365f1ae2dd60b7975c77fc27e0fca3843a363a7293212f5"
+      url "https://github.com/lord-helicon/lazyssh/releases/download/v0.5.0/lazyssh_Linux_armv6.tar.gz"
+      sha256 "dec492ced29ae62fd27d52004319a76720cea463f4c9c933f3369f0e071e7fde"
       def install
         bin.install "lazyssh"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lord-helicon/lazyssh/releases/download/v0.4.0/lazyssh_Linux_arm64.tar.gz"
-      sha256 "6dae50c7d64efe32f0c2ee5de68c7febe38b7bdb1e66c40d35d6bbb2ad535bef"
+      url "https://github.com/lord-helicon/lazyssh/releases/download/v0.5.0/lazyssh_Linux_arm64.tar.gz"
+      sha256 "1513e1a12e93be26b75b5ede70bdf9d99acafb5c231fa06c2674d67757ccba5d"
       def install
         bin.install "lazyssh"
       end
